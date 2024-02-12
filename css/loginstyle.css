@@ -1,0 +1,194 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+/* main style graph */
+/* color graphics 
+#ffefbb --> giallo 
+#fff --> bianco 
+shadow rga(100,100,111,0.2) --> bordo ombra
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+}
+/* body style */
+
+body{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #ffefbb,#fff); 
+}
+
+/* header with logo */
+
+.logo{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img{
+    width: 80px;
+    border-radius: 50%;
+}
+
+.logo a{
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+
+/* central login style */ 
+
+.container{
+    background: #fff;
+    width: 450px;
+    padding: 40px 32px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.container h1{
+    font-size: 1.6rem;    
+}
+
+.container .social-login{
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.container .social-login button{
+    padding: 8px;
+    width: 100%;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #000;
+    border: 1px solid #a5a5a5;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+/* botton color change */
+.container .social-login button i{
+    font-size: 26px;
+}
+.container .social-login .google:hover{
+    color: #645934;
+    border-color: #645934;
+}
+
+.container .divider{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.container .divider .line{
+    height: 1px;
+    width: 100%;
+    background: #000;
+    opacity: 0.2;
+    margin: 30px 0 16px;
+}
+/* form graph */ 
+.container form label{
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.03rem;
+    display: block;
+    margin-top: 12px;
+}
+
+.container form .custome-input{
+    position: relative;
+}
+
+.container form .custome-input input{
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    height: 40px;
+    letter-spacing: 0.03rem;
+    border: 1px solid #000;
+    background: transparent;
+    outline: none;
+    border-radius: 8px;
+    text-indent: 20px;
+    margin-top: 6px;
+    transition: all 0.3s ease;
+}
+
+.container form .custome-input input:focus{
+    border-color: #645934;
+
+}
+.container form .custome-input i{
+    position: absolute;
+    font-size: 28px;
+    right: 10px;
+    top: 14px;
+    transition: all 0.3s ease;
+}
+
+.container form .custome-input input:focus + i{
+    color: #645934;
+}
+
+.container form .login{
+    width: 100%;
+    margin-top: 30px;
+    background: #d4c79c;
+    color: #fff;
+    border: none;
+    line-height: 50px;
+    font-size: 18px;
+    letter-spacing: 0.025rem;
+    cursor: pointer;
+    font-weight: 800;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.container form .login:hover{
+    background: #645934;
+}
+
+.container .links{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.container .links a{
+    color: #645934;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    text-underline-offset: 6px;
+    text-decoration-color: #645934;
+}
+
+.container .links a:hover{
+    text-decoration: underline;
+}
+
+

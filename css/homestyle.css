@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+/* main style graph */
+/* color graphics 
+    background: linear-gradient(90deg, #ffefbb,#fff); 
+#ffefbb --> giallo 
+#fff --> bianco 
+shadow rga(100,100,111,0.2) --> bordo ombra
+*/
+/* general graph rules */ 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+body{
+    background: linear-gradient(90deg, #000000,#fff); 
+}
+/* header graph */
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+header{
+    width: 1140px;
+    max-width: 80%;
+    margin: auto;
+    height: 50px;
+    display: flex;
+    align-items: center;    
+}
+header a{
+    margin-right: 40px;
+}
